@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flagged Save - Security Warning</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #f0f6fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-top: 6px solid #f85149; /* Red alert border */
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 520px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        .icon-container {
+            width: 80px;
+            height: 80px;
+            background: rgba(248, 81, 73, 0.15);
+            color: #f85149;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px auto;
+        }
+
+        .icon-container svg {
+            width: 44px;
+            height: 44px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        p {
+            color: #8b949e;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            background-color: #00a2ff; /* Roblox blue color */
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 14px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .btn:hover {
+            background-color: #0088d6;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .footer-note {
+            margin-top: 24px;
+            font-size: 0.85rem;
+            color: #484f58;
+        }
+
+        .footer-note span {
+            color: #8b949e;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Shield Warning Icon -->
+        <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+        </div>
+
+        <h1>Flagged Save</h1>
+        
+        <p>This Website was flagged as a Roblox Scam and you have been sent here.</p>
+
+        <a href="https://web.roblox.com" class="btn">Return to Roblox</a>
+
+        <div class="footer-note">
+            Protected by <span>Arrotaken Extension</span>
+        </div>
+    </div>
+
+</body>
+</html>
